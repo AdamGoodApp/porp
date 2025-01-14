@@ -11,15 +11,14 @@ import {
   SidebarInset,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
-import { Filter } from "./filter";
-import { Metrics } from "./metrics";
-import { ShipmentCard } from "./shipment-card";
+import { Filter } from "../components/filter";
+import { Metrics } from "../components/metrics";
+import { ShipmentCard } from "../components/shipment-card";
 
 export default function Home() {
   return (
     <div className="flex flex-col h-screen w-full overflow-hidden">
       <SidebarInset>
-        {/* Header */}
         <header className="flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">
           <div className="flex items-center gap-2 px-4">
             <SidebarTrigger className="-ml-1" />

@@ -12,7 +12,7 @@ import { Search, Download } from "lucide-react"
 
 export function Filter() {
   return (
-    <div className="flex gap-x-4 pb-4">
+    <div className="flex gap-x-4 pb-4 py-2">
       <Tabs defaultValue="export">
         <TabsList>
           <TabsTrigger value="export">Export</TabsTrigger>

@@ -1,0 +1,181 @@
+{
+  "id": "76c548a1-119d-4c99-8bd9-80f49db17f4a",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.shipments": {
+      "name": "shipments",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "shipments_id_seq",
+            "schema": "public",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "status": {
+          "name": "status",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "cargo": {
+          "name": "cargo",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "autoTrackingStatus": {
+          "name": "autoTrackingStatus",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "cancelledAt": {
+          "name": "cancelledAt",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "customerReference": {
+          "name": "customerReference",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "houseBlConsignee": {
+          "name": "houseBlConsignee",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "houseBlShipper": {
+          "name": "houseBlShipper",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "label": {
+          "name": "label",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "responsibilityType": {
+          "name": "responsibilityType",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tradeDirection": {
+          "name": "tradeDirection",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "urgencyLevel": {
+          "name": "urgencyLevel",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "transshipPorts": {
+          "name": "transshipPorts",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pol": {
+          "name": "pol",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pod": {
+          "name": "pod",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "freetimeLimitDate": {
+          "name": "freetimeLimitDate",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "dem": {
+          "name": "dem",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "det": {
+          "name": "det",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "assignedPartners": {
+          "name": "assignedPartners",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "internalAssignees": {
+          "name": "internalAssignees",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "assignedPartnerTeams": {
+          "name": "assignedPartnerTeams",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "totalUnreadMessageCount": {
+          "name": "totalUnreadMessageCount",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "handledBySimpleOperations": {
+          "name": "handledBySimpleOperations",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
